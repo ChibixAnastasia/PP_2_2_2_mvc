@@ -8,7 +8,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class ServiseOfCarImpl {
+public class ServiseOfCarImpl implements CarService{
+    @Override
     public  List<Car> getCar(int  number){
         List<Car> list = new ArrayList<>();
         list.add(new Car("Porshe", 2005, "red"));
